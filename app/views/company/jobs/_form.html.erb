@@ -1,0 +1,13 @@
+<%= simple_form_for [:company, @job] do |f| %>
+  <div class="form-group">
+    <%= f.input :title, label: t("title"), input_html: {class: "form-control"} %>
+    <%= f.input :description, label: t("description"), input_html: {class: "form-control"} %>
+    <%= f.input :wage_lower_bound, label: t("wageLowerBound"), input_html: {class: "form-control"} %>
+    <%= f.input :wage_upper_bound, label: t("wageUpperBound"), input_html: {class: "form-control"} %>
+    <%= f.input :contact_email, label: t("contactEmial"), input_html: {class: "form-control"} %>
+    <%= f.input :is_hidden, label: t("isHidden") %>
+  </div>
+  <div class="text-center">
+    <%= f.submit t("submit"), class: "btn btn-primary", data: {disable_with: t("submiting")} %>
+  </div>
+<% end %>
