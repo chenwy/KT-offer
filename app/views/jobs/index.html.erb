@@ -1,0 +1,35 @@
+<div class="col-md-12">
+  <div class="pull-right">
+    <%= link_to(t("addJob"), new_job_path, class: "btn btn-md btn-primary")%>
+  </div>
+
+  <table class="table table-triped">
+    <thead>
+      <tr>
+        <th><%= t("title") %></th>
+        <th><%= t("wageLowerBound") %></th>
+        <th><%= t("wageUpperBound") %></th>
+        <th><%= t("createdAt") %></th>
+        <th><%= t("operate") %></th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @jobs.each do |job| %>
+        <tr>
+          <td><%= link_to(job.title, job_path(job)) %></td>
+          <td><%= job.wage_lower_bound%></td>
+          <td><%= job.wage_upper_bound%></td>
+          <td><%= job.created_at%></td>
+          <td>
+            <%= link_to edit_job_path(job), class: "btn btn-xs btn-primary" do %><i class="fa fa-pencil"></i><% end %>
+            <%= link_to job_path(job), method: :delete, class: "btn btn-xs btn-primary", data: {confirm: t("deleteConfirm")} do %><i class="fa fa-trash-o"></i><% end %>
+          </td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+
+  <div class="text-center">
+    <%= will_paginate @jobs %>
+  </div>
+</div>

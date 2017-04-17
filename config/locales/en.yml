@@ -20,6 +20,24 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+
   regist: "Regist"
   login: "Log In"
+
+  addJob: "Add a Job"
+  editJob: "Edit a Job"
+  edit: "Edit"
+  delete: "Delete"
+  submit: "Submit"
+  submiting: "Submiting..."
+  updateMsg: "Updated Success"
+
+
+  title: "Title"
+  description: "Description"
+  wageLowerBound: "WageLowerBound"
+  wageUpperBound: "WageUpperBound"
+  contactEmial: "ContactEmial"
+  createdAt: "CreatedAt"
+  operate: "Operate"
+  isHidden: "isHidden"
