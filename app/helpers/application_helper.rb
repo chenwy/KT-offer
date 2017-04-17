@@ -10,4 +10,8 @@ module ApplicationHelper
         user.user_role == 3
     end
   end
+
+  def render_date_format(date)
+    date.to_formatted_s(:db)
+  end
 end

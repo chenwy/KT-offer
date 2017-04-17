@@ -29,6 +29,7 @@ en:
 
   #views
   adminPanel: "个人管理"
+  jobsList: "招聘列表"
 
   #operate
   addJob: "新建"

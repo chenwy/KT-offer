@@ -1,6 +1,7 @@
 class Company::JobsController < ApplicationController
   before_action :authenticate_user!
   before_action :validate_user_role
+  layout "company"
 
   def index
     @jobs = Job.where(user: current_user).recent.paginate(page: params[:page], per_page: 10)
