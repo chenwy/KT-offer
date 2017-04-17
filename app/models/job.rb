@@ -11,6 +11,7 @@ class Job < ApplicationRecord
   scope :published, -> {where(is_hidden: false)}
 
   belongs_to :user
+  has_many :resumes
 
 
   def publish!

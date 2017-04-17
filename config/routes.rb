@@ -1,7 +1,10 @@
 Rails.application.routes.draw do
+
   devise_for :users
 
-  resources :jobs
+  resources :jobs do
+    resources :resumes
+  end
 
   namespace :company do
     resources :jobs do
