@@ -20,9 +20,15 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
+  #system
+  sysName: "Job Listing"
+
   #navbar
   regist: "注册"
   login: "登入"
+
+  #views
+  adminPanel: "个人管理"
 
   #operate
   addJob: "新建"
@@ -34,7 +40,9 @@ en:
   updateMsg: "更新成功"
   deleteMsg: "该信息已删除"
   deleteConfirm: "你确定删除该条信息?"
+  quit: "退出"
 
+  #models
   #Job
   title: "标题"
   description: "描述"
