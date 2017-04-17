@@ -8,6 +8,7 @@ class Job < ApplicationRecord
   validates :wage_upper_bound, numericality: {greater_than: :wage_lower_bound}
 
   scope :recent, -> {order("created_at DESC")}
+  scope :published, -> {where(is_hidden: false)}
 
   belongs_to :user
 

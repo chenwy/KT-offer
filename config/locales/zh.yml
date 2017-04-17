@@ -30,6 +30,9 @@ en:
   #views
   adminPanel: "个人管理"
   jobsList: "招聘列表"
+  sortByWageLowerBound: "按照薪资下限排列"
+  sortByWageUpperBound: "按照薪资上限排列"
+  sortByCreatedAt: "按照发布时间排列"
 
   #operate
   addJob: "新建"
@@ -42,6 +45,11 @@ en:
   deleteMsg: "该信息已删除"
   deleteConfirm: "你确定删除该条信息?"
   quit: "退出"
+
+  #labels
+
+  #buttons
+  sortBtn: "排列"
 
   #models
   #Job

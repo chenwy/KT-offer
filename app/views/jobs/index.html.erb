@@ -1,4 +1,15 @@
 <div class="col-md-12">
+  <div class="dropdown clearfix pull-right">
+    <button id="sortBtn" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" >
+      <%= t("sortBtn") %>
+      <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu" aria-labelledby="sortBtn">
+      <li><%= link_to(t("sortByWageLowerBound"), jobs_path(order: "order_by_lower")) %></li>
+      <li><%= link_to(t("sortByWageUpperBound"), jobs_path(order: "order_by_upper")) %></li>
+      <li><%= link_to(t("sortByCreatedAt"), jobs_path(order: "order_by_created_at")) %></li>
+    </ul>
+  </div>
   <table class="table table-striped">
     <thead>
       <tr>
