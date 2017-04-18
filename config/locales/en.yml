@@ -20,19 +20,42 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
+  #system
+  sysName: "Job Listing"
 
+  #navbar
   regist: "Regist"
   login: "Log In"
 
+  #views
   addJob: "Add a Job"
   editJob: "Edit a Job"
+  companyPanel: "User panel"
+  jobsList: "jobsList"
+  sortByWageLowerBound: "按照薪资下限排列"
+  sortByWageUpperBound: "按照薪资上限排列"
+  sortByCreatedAt: "按照发布时间排列"
+  sendRecord: "提交履历"
+
+  #operate
   edit: "Edit"
   delete: "Delete"
   submit: "Submit"
   submiting: "Submiting..."
   updateMsg: "Updated Success"
+  deleteMsg: "Deleted Success"
+  deleteConfirm: "Are you sure?"
+  quit: "quit"
 
 
+  #labels
+  resumesList: "resumesList"
+
+  #buttons
+  sortBtn: "Sort"
+
+  #models
+  #Job
   title: "Title"
   description: "Description"
   wageLowerBound: "WageLowerBound"
@@ -41,3 +64,8 @@ en:
   createdAt: "CreatedAt"
   operate: "Operate"
   isHidden: "isHidden"
+  resumeCount: "resumeCount"
+
+  #Resume
+  content: "Content"
+  attachment: "attachment"
