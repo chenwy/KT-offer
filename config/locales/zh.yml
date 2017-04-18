@@ -31,6 +31,7 @@ en:
   addJob: "新建"
   editJob: "编辑"
   companyPanel: "个人管理"
+  userManage: "帐户管理"
   jobsList: "招聘列表"
   sortByWageLowerBound: "按照薪资下限排列"
   sortByWageUpperBound: "按照薪资上限排列"
