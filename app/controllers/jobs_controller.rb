@@ -4,7 +4,7 @@ class JobsController < ApplicationController
     @jobs = case params[:order]
             when "order_by_lower"
               Job.published.order("wage_lower_bound DESC").paginate(page: params[:page], per_page: 10)
-            when "order_by_lower"
+            when "order_by_upper"
               Job.published.order("wage_upper_bound DESC").paginate(page: params[:page], per_page: 10)
             else
               Job.published.recent.paginate(page: params[:page], per_page: 10)

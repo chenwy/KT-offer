@@ -63,6 +63,8 @@ en:
   email: "邮箱"
   hrLabel: "我就HR"
   workerLabel: "我是优秀人才"
+  login: "用户名/邮箱"
+  rememberMe: "记住我"
 
   #Job
   title: "标题"
