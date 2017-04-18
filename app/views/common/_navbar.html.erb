@@ -21,10 +21,50 @@
             </ul>
           </li>
         <% else %>
-          <li><%= link_to(t("regist"), new_user_registration_path) %></li>
-          <li><%= link_to(t("login"), new_user_session_path) %></li>
+          <li><a href="#" data-toggle="modal" data-target="#signup-modal"><%= t("signUp") %></a></li>
+          <li><a href="#" data-toggle="modal" data-target="#login-modal"><%= t("signIn") %></a></li>
         <% end %>
       </ul>
     </div>
   </div>
 </nav>
+
+<div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+  <div class="modal-dialog" role="document">
+    <div class="loginmodal-container">
+       <h2><%= t("signIn") %></h2>
+       <%= simple_form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+         <div class="form-inputs">
+           <%= f.input :email, required: false, autofocus: true %>
+           <%= f.input :password, required: false %>
+           <%= f.input :remember_me, as: :boolean if devise_mapping.rememberable? %>
+         </div>
+         <div class="form-actions">
+           <%= f.button :submit, t("signIn") %>
+         </div>
+       <% end %>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="signup-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+  <div class="modal-dialog">
+    <div class="loginmodal-container">
+      <h2><%= t("signUp") %></h2>
+        <%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+        <%= f.error_notification %>
+        <div class="form-inputs">
+          <%= f.collection_radio_buttons :user_role, [[2, t('hrLabel')], [3, t('workerLabel')]], :first, :last %>
+
+          <%= f.input :username, label: t("username"), required: true, autofocus: true %>
+          <%= f.input :email, label: t("email"), required: true %>
+          <%= f.input :password, label: t("password"), required: true, hint: ("#{@minimum_password_length} characters minimum" if @minimum_password_length) %>
+          <%= f.input :password_confirmation, label: t("passwordConfirm"), required: true %>
+        </div>
+        <div class="form-actions">
+            <%= f.button :submit, t("signUp") %>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</div>

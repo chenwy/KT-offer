@@ -24,8 +24,8 @@ en:
   sysName: "Job Listing"
 
   #navbar
-  regist: "Regist"
-  login: "Log In"
+  signUp: "Sign Up"
+  signIn: "Sign In"
 
   #views
   addJob: "Add a Job"

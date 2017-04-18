@@ -24,8 +24,8 @@ en:
   sysName: "Job Listing"
 
   #navbar
-  regist: "注册"
-  login: "登入"
+  signUp: "注册"
+  signIn: "登入"
 
   #views
   addJob: "新建"
@@ -51,10 +51,19 @@ en:
   #labels
   resumesList: "履历列表"
 
+
   #buttons
   sortBtn: "排列"
 
   #models
+  #User
+  username: "用户名"
+  password: "密码"
+  passwordConfirm: "确认密码"
+  email: "邮箱"
+  hrLabel: "我就HR"
+  workerLabel: "我是优秀人才"
+
   #Job
   title: "标题"
   description: "描述"
