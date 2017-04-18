@@ -30,7 +30,7 @@ en:
   #views
   addJob: "新建"
   editJob: "编辑"
-  adminPanel: "个人管理"
+  companyPanel: "个人管理"
   jobsList: "招聘列表"
   sortByWageLowerBound: "按照薪资下限排列"
   sortByWageUpperBound: "按照薪资上限排列"
@@ -49,6 +49,7 @@ en:
 
 
   #labels
+  resumesList: "履历列表"
 
   #buttons
   sortBtn: "排列"
@@ -63,6 +64,7 @@ en:
   createdAt: "创建时间"
   operate: "操作"
   isHidden: "是否隐藏"
+  resumeCount: "收到履历数量"
 
   #Resume
   content: "内容"
