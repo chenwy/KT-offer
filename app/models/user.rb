@@ -7,7 +7,7 @@ class User < ApplicationRecord
   # Only allow letter, number, underscore and punctuation.
   validates_format_of :username, with: /^[a-zA-Z0-9_\.]*$/, :multiline => true
 
-  validates :username, :presence => true, :uniqueness => {:case_sensitive => false} 
+  validates :username, :presence => true, :uniqueness => {:case_sensitive => false}
 
   # Virtual attribute for authenticating by either username or email
   # This is in addition to a real persisted field like 'username'
