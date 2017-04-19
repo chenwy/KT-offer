@@ -24,6 +24,7 @@ en:
   sysName: "Job Listing"
 
   #navbar
+  home: "首页"
   signUp: "注册"
   signIn: "登陆"
 
