@@ -23,25 +23,8 @@ p {
     margin: 0;
 }
 
-a {
-    color: #fff;
-    transition: all 0.3s ease-in 0s;
-}
-
 iframe {
     border: 0;
-}
-
-a,
-a:focus,
-a:hover {
-    text-decoration: none;
-    outline: 0;
-}
-
-a:focus,
-a:hover {
-    color: #6CB670;
 }
 
 h1,
@@ -160,8 +143,9 @@ $navbarColor : rgb(14, 180, 147);
     padding: 0;
 }
 
-.navbar-nav li a {
-    border-top: 1px solid transparent;
+header a {
+    color: #fff;
+    transition: all 0.3s ease-in 0s;
 }
 
 .navbar-nav li a.current,
@@ -234,6 +218,12 @@ $navbarColor : rgb(14, 180, 147);
 .lead {
     font-size: 18px;
     font-weight: 400;
+}
+
+.fl50 {
+    float: left;
+    width: 50%;
+    border-top: 3px solid #e7e7e7;
 }
 /*=========================================
 	Footer
