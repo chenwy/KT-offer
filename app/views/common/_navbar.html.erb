@@ -1,14 +1,7 @@
-
 <!-- Fixed navigation -->
 <header id="navigation" class="navbar navbar-fixed-top">
   <div class="container-fluid">
     <div class="navbar-header">
-      <!-- responsive nav button -->
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-        <span class="sr-only">Toggle navigation</span>
-        <i class="fa fa-bars fa-2x"></i>
-      </button>
-      <!-- /responsive nav button -->
 
       <!-- logo -->
       <a class="navbar-brand" href="/">
@@ -40,9 +33,9 @@
           </ul>
         </li>
       <% else %>
-      <li>
-        <a href="#" ><%= t("home") %></a>
-      </li>
+        <li>
+          <a href="#"><%= t("home") %></a>
+        </li>
         <li>
           <a href="#" data-toggle="modal" onclick="showModal('signup')"><%= t("signUp") %></a>
         </li>
@@ -54,11 +47,13 @@
     </div>
   </nav>
 </header>
+
 <!-- preloader -->
 <!-- <div id="preloader">
   <%= image_tag "preloader.gif" , class: 'img-responsive' %>
 </div> -->
 <!-- end preloader -->
+
 <div class="modal fade" id="signup-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;"></div>
 
 <script>

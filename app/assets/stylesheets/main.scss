@@ -4,7 +4,7 @@
 body {
     background-color: #fff;
     font-family: 'Open Sans', sans-serif;
-    line-height: 21px;
+    line-height: 30px;
     font-size: 13px;
     color: #6a737b;
 }
@@ -23,10 +23,6 @@ p {
 
 a {
     color: #fff;
-    -webkit-transition: all 0.3s ease-in 0s;
-    -moz-transition: all 0.3s ease-in 0s;
-    -ms-transition: all 0.3s ease-in 0s;
-    -o-transition: all 0.3s ease-in 0s;
     transition: all 0.3s ease-in 0s;
 }
 
@@ -76,10 +72,6 @@ span.color {
 
 .footer {
     padding: 20px 0;
-}
-
-body > section {
-    padding: 70px 0;
 }
 
 .sec-title {}
@@ -148,18 +140,17 @@ body > section {
 /*=========================================
 	Header
 ==========================================*/
+
+$navbarColor : rgb(14, 180, 147);
+
 #navigation {
-    background-color: rgb(14, 180, 147);
+    background-color: $navbarColor;
     border: 0 none;
     margin: 0;
-    -webkit-transition: background-color 800ms linear;
-    -moz-transition: background-color 800ms linear;
-    -ms-transition: background-color 800ms linear;
-    -o-transition: background-color 800ms linear;
     transition: background-color 800ms linear;
 }
 
-.navbar-toggle i {
+.navbar-toggle li {
     color: #fff;
 }
 
@@ -174,24 +165,25 @@ body > section {
 .navbar-nav li a.current,
 .navbar-nav li a:focus,
 .navbar-nav li a:hover {
-    background-color: transparent;
+    background-color: $navbarColor;
     border-top: 1px solid #32B0EE;
     color: #fff;
 }
+
 /*=========================================
 	Box
 ==========================================*/
 .box {
-    background-image: url("header.jpg");
+    background-image: url("header.png");
     background-repeat: no-repeat;
     background-size: cover;
-    margin-bottom: 50px;
+    // margin-bottom: 50px;
 
     .box-inner {
-        background-color: rgba(250, 250, 250, 0.69);
-        padding-bottom: 5px;
+        // background-color: rgba(250, 250, 250, 0.69);
+        padding-bottom: 20%;
         margin-top: 150px;
-        margin-bottom: 150px;
+        margin-bottom: 0px;
     }
 
     .title {
@@ -215,6 +207,7 @@ body > section {
     }
 }
 //---------Content---------
+
 .content-section-a {
     padding: 50px 0;
     background-color: #f8f8f8;

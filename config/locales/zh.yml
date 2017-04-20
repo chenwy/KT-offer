@@ -28,6 +28,9 @@ en:
   signUp: "注册"
   signIn: "登陆"
 
+  headerInfo: "快人一步 迈上征途"
+  leadInfo: "马上出发"
+
   #views
   addJob: "新建"
   editJob: "编辑"
@@ -63,7 +66,7 @@ en:
   password: "密码"
   passwordConfirm: "确认密码"
   email: "邮箱"
-  hrLabel: "我就HR"
+  hrLabel: "我就是HR"
   workerLabel: "我是优秀人才"
   login: "用户名/邮箱"
   rememberMe: "记住我"
