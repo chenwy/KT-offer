@@ -21,7 +21,7 @@
 
 en:
   #system
-  sysName: "Job Listing"
+  sysName: "KT offer"
 
   #navbar
   home: "首页"
@@ -40,7 +40,7 @@ en:
   sortByWageLowerBound: "按照薪资下限排列"
   sortByWageUpperBound: "按照薪资上限排列"
   sortByCreatedAt: "按照发布时间排列"
-  sendRecord: "提交履历"
+  sendRecord: "立即申请"
 
   #operate
   edit: "编辑"

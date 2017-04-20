@@ -225,6 +225,28 @@ header a {
     width: 50%;
     border-top: 3px solid #e7e7e7;
 }
+
+
+.submitBtn  {
+    background: rgb(254, 231, 154);
+    border-radius: 30px;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.8) inset;
+    border: 1px solid #D69E31;
+    color: #85592e;
+    cursor: pointer;
+    float: left;
+    font: bold 15px Helvetica, Arial, sans-serif;
+    height: 35px;
+    margin: 20px 15px 35px 15px;
+    position: relative;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+    width: 120px;
+}
+
+.submitBtn :hover {
+    background: rgb(254, 193, 81);
+}
+
 /*=========================================
 	Footer
 ==========================================*/
@@ -232,6 +254,8 @@ header a {
     background-color: #1ea78d;
     border-top: 5px solid #062033;
     color: #fff;
+    position: relative;
+    height: 50px;
 }
 
 .footer a:hover {
