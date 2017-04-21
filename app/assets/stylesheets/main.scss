@@ -18,11 +18,6 @@ ul {
     list-style: none;
 }
 
-figure,
-p {
-    margin: 0;
-}
-
 iframe {
     border: 0;
 }
@@ -57,50 +52,6 @@ span.color {
 
 .footer {
     padding: 20px 0;
-}
-
-.sec-title {}
-
-.sec-title h2 {
-    color: #0eb493;
-    font-size: 28px;
-    font-weight: 800;
-    text-transform: uppercase;
-}
-
-.sec-sub-title {
-    margin: 35px 0 45px;
-}
-
-.sec-sub-title p {
-    font-weight: 600;
-    line-height: 24px;
-    font-size: 18px;
-    color: #5b646e;
-}
-
-.devider {
-    margin-top: 30px;
-}
-
-.devider i {
-    color: #cccccc;
-}
-
-.devider:after,
-.devider:before {
-    content: "______________________";
-    color: #e6e8ea;
-    position: relative;
-    bottom: 6px;
-}
-
-.devider:before {
-    right: 10px;
-}
-
-.devider:after {
-    left: 10px;
 }
 
 .mb50 {
@@ -256,66 +207,6 @@ header a {
     color: #fff;
     position: relative;
     height: 70px;
-}
-
-.footer a:hover {
-    color: #062033;
-}
-
-.footer h6 {
-    font-size: 14px;
-    font-weight: 700;
-    line-height: 24px;
-    margin-bottom: 30px;
-}
-
-.about-us p {
-    line-height: 24px;
-}
-
-.footer-single .subscribe {
-    margin-bottom: 15px;
-    position: relative;
-}
-
-.subscribe #subscribe {
-    background-color: transparent;
-    border: 2px solid #fff;
-    border-radius: 2px;
-    height: 40px;
-    text-indent: 10px;
-    width: 100%;
-}
-
-.subscribe #subs {
-    background-color: transparent;
-    border: 0 none;
-    font-size: 24px;
-    position: absolute;
-    right: 0;
-    top: 6px;
-}
-
-.footer-single {
-    line-height: 24px;
-}
-
-.footer-single ul {}
-
-.footer-single li {
-    line-height: 32px;
-}
-
-.footer-single p i {
-    margin: 0 10px;
-}
-
-.credit a {
-    color: #062033;
-}
-
-.credit a:hover {
-    color: #fff;
 }
 
 .copyright {
