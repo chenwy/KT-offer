@@ -258,6 +258,66 @@ header a {
     height: 70px;
 }
 
+.footer a:hover {
+    color: #062033;
+}
+
+.footer h6 {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 24px;
+    margin-bottom: 30px;
+}
+
+.about-us p {
+    line-height: 24px;
+}
+
+.footer-single .subscribe {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.subscribe #subscribe {
+    background-color: transparent;
+    border: 2px solid #fff;
+    border-radius: 2px;
+    height: 40px;
+    text-indent: 10px;
+    width: 100%;
+}
+
+.subscribe #subs {
+    background-color: transparent;
+    border: 0 none;
+    font-size: 24px;
+    position: absolute;
+    right: 0;
+    top: 6px;
+}
+
+.footer-single {
+    line-height: 24px;
+}
+
+.footer-single ul {}
+
+.footer-single li {
+    line-height: 32px;
+}
+
+.footer-single p i {
+    margin: 0 10px;
+}
+
+.credit a {
+    color: #062033;
+}
+
+.credit a:hover {
+    color: #fff;
+}
+
 .copyright {
     color: #fff;
     margin-top: 10px;

@@ -3,12 +3,13 @@
     <%= render "common/devise/signup-form" %>
     <div class="modal-footer">
       <div class="links pull-right">
-        <button class="btn btn-info btn-small" data-toggle="modal" onclick="showModal('signin')"><%= t("signIn") %></button><br/>
-        <br>
+        <button class="btn btn-info btn-small" data-dismiss="modal" data-toggle="modal" onclick="showModal('signin')"><%= t("signIn") %></button><br/>
+        <!-- <br>
         <div class="center-block">
           <button class="btn btn-info btn-small text-center" data-toggle="modal" data-target="#forgot-modal" data-dismiss='modal'>Forgot password?</button><br/>
-        </div>
+        </div> -->
       </div>
     </div>
+
   </div>
 </div>
